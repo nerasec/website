@@ -559,6 +559,17 @@
     font-weight: 700;
     color: #1a1000;
     font-size: 1.05rem;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .leader-avatar:hover{
+    box-shadow: 0 0 0 3px rgba(255,138,0,0.35);
+    transform: translateY(-1px);
+  }
+  .leader-avatar img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
   }
   .leader-role{
     font-size: 0.74rem;
@@ -568,6 +579,12 @@
     font-weight: 600;
   }
   .leader-card h3{ margin-top: 4px; font-size: 1.05rem; }
+  .leader-name-link{
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .leader-name-link:hover{ color: var(--accent); text-decoration: underline; }
   .leader-card p.bio{ margin-top: 10px; color: var(--ink-muted); font-size: 0.88rem; }
 
   /* cta / contact */
@@ -998,30 +1015,30 @@
       <div class="leadership-grid">
         <div class="leader-card reveal">
           <div class="leader-card-head">
-            <div class="leader-avatar">T</div>
+            <a class="leader-avatar" href="https://www.linkedin.com/in/thmusa/" target="_blank" rel="noopener noreferrer" aria-label="Thiago Musa no LinkedIn">T</a>
             <div>
               <div class="leader-role" data-i18n="leadership.role1">Fundador — Segurança &amp; Estratégia</div>
-              <h3 data-i18n="leadership.name1">Thiago Musa</h3>
+              <h3><a class="leader-name-link" href="https://www.linkedin.com/in/thmusa/" target="_blank" rel="noopener noreferrer" data-i18n="leadership.name1">Thiago Musa</a></h3>
             </div>
           </div>
           <p class="bio" data-i18n="leadership.bio1">Mais de 20 anos em Segurança da Informação, com passagens por Trustwave SpiderLabs, Qualys, Cymulate e SANS Institute na América Latina. Já apresentou em RSA, Black Hat, Microsoft DCC, Mind the Sec, H2HC e Roadsec.</p>
         </div>
         <div class="leader-card reveal">
           <div class="leader-card-head">
-            <div class="leader-avatar">F</div>
+            <a class="leader-avatar" href="https://www.linkedin.com/in/fernando-oliveira-0a656529b/" target="_blank" rel="noopener noreferrer" aria-label="Fernando Oliveira no LinkedIn">F</a>
             <div>
               <div class="leader-role" data-i18n="leadership.role2">Fundador — Finanças &amp; Operações</div>
-              <h3 data-i18n="leadership.name2">Fernando Oliveira</h3>
+              <h3><a class="leader-name-link" href="https://www.linkedin.com/in/fernando-oliveira-0a656529b/" target="_blank" rel="noopener noreferrer" data-i18n="leadership.name2">Fernando Oliveira</a></h3>
             </div>
           </div>
           <p class="bio" data-i18n="leadership.bio2">Engenheiro Mecânico pela UFRJ, com mais de 25 anos construindo e escalando empresas — cofundador da Haztec, ex-CFO da Klefer Marketing Esportivo e fundador da Bodypulse Fitness. Hoje dedicado a IA, cibersegurança e automação empresarial na Nera.</p>
         </div>
         <div class="leader-card reveal">
           <div class="leader-card-head">
-            <div class="leader-avatar">J</div>
+            <a class="leader-avatar" href="https://www.linkedin.com/in/juliocvieira/" target="_blank" rel="noopener noreferrer" aria-label="Julio Vieira no LinkedIn">J</a>
             <div>
               <div class="leader-role" data-i18n="leadership.role3">Fundador — Tecnologia &amp; Produto</div>
-              <h3 data-i18n="leadership.name3">Julio Vieira</h3>
+              <h3><a class="leader-name-link" href="https://www.linkedin.com/in/juliocvieira/" target="_blank" rel="noopener noreferrer" data-i18n="leadership.name3">Julio Vieira</a></h3>
             </div>
           </div>
           <p class="bio" data-i18n="leadership.bio3">Mais de 20 anos de liderança em Tecnologia, Produto e Cibersegurança, com cargos executivos na IBM, Trustwave, Simeio, Promise686 e WPS Digital na América do Norte e América Latina. Especialista em transformação digital, estratégia de produto, serviços gerenciados de segurança (MSSP), DevSecOps e governança de cibersegurança.</p>
