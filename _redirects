@@ -1,0 +1,4 @@
+# Hide the netlify.app URL once nerasec.com DNS is live — send any
+# traffic that lands on the raw Netlify subdomain to the real domain,
+# preserving path and query string.
+https://nerasec.netlify.app/*  https://nerasec.com/:splat  301!
