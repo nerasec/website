@@ -177,10 +177,43 @@
     max-width: 58ch;
   }
   .announce .credentials{
-    margin-top: 20px;
+    margin-top: 34px;
     font-size: clamp(1.05rem, 0.5vw + 0.95rem, 1.2rem);
     color: var(--ink-muted);
     max-width: 58ch;
+  }
+  .pillars{
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+  }
+  .pillar{
+    display: flex;
+    gap: 20px;
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+  .pillar:last-child{ border-bottom: 1px solid var(--line); }
+  .pillar-index{
+    flex: 0 0 32px;
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    letter-spacing: 0.05em;
+    padding-top: 3px;
+  }
+  .pillar-body h3{
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--accent);
+    margin: 0;
+  }
+  .pillar-body p{
+    margin-top: 8px;
+    color: var(--ink-muted);
+    font-size: 0.98rem;
+    max-width: 56ch;
   }
   .announce .soon{
     margin-top: 34px;
@@ -256,8 +289,39 @@
     <div class="announce">
       <span class="eyebrow" data-i18n="announce.eyebrow">Segurança provada, não fotografada</span>
       <h1 data-i18n-html="announce.title">Nasce a <span class="accent">Nera Security</span>.</h1>
-      <p class="lead" data-i18n="announce.lead">Com foco na segurança do ecossistema de IA e em uma abordagem proativa — validar, testar e antecipar — na defesa dos ambientes.</p>
-      <p class="credentials" data-i18n="announce.credentials">Por trás da Nera estão profissionais com certificações CISSP, OSCP e GIAC, entre outras, e mais de 50 anos somados de experiência em algumas das principais operações de cibersegurança da América Latina e dos Estados Unidos.</p>
+      <p class="lead" data-i18n="announce.lead">Uma empresa focada na segurança proativa do ecossistema de IA, com uma abordagem contínua de proteção dos ambientes digitais.</p>
+      <p class="lead" data-i18n="announce.cycle">Atuamos em um ciclo permanente — antecipar, validar, testar e agir — da avaliação de risco à resposta a incidentes, em infraestrutura digital e sistemas de IA.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="pillar-index">01</span>
+          <div class="pillar-body">
+            <h3 data-i18n="announce.pillar1Title">Antecipar</h3>
+            <p data-i18n="announce.pillar1Body">Identificamos as ameaças antes que cheguem ao ambiente, combinando inteligência, threat hunting e deception.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="pillar-index">02</span>
+          <div class="pillar-body">
+            <h3 data-i18n="announce.pillar2Title">Validar</h3>
+            <p data-i18n="announce.pillar2Body">Expomos o risco real do ambiente — gaps, arquitetura, cenários de comprometimento — antes de qualquer ação corretiva.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="pillar-index">03</span>
+          <div class="pillar-body">
+            <h3 data-i18n="announce.pillar3Title">Testar</h3>
+            <p data-i18n="announce.pillar3Body">Colocamos as defesas à prova, com segurança ofensiva e simulações de ataque baseadas em cenários reais.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="pillar-index">04</span>
+          <div class="pillar-body">
+            <h3 data-i18n="announce.pillar4Title">Agir</h3>
+            <p data-i18n="announce.pillar4Body">Mitigamos as ameaças identificadas e atuamos quando o incidente acontece: contenção, resposta forense e negociação — conduzidas por quem já conhece o ambiente.</p>
+          </div>
+        </div>
+      </div>
+      <p class="credentials" data-i18n="announce.credentials">Por trás da Nera estão profissionais com certificações CISSP, OSCP e GIAC, entre outras, e mais de 50 anos somados de experiência em algumas das principais operações de cibersegurança no Brasil, na América Latina e nos Estados Unidos.</p>
       <a class="contact-link" href="mailto:info@nerasec.ai">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
         <span data-i18n="announce.contact">info@nerasec.ai</span>
@@ -281,8 +345,17 @@
     pt: {
       "announce.eyebrow": "Segurança provada, não fotografada",
       "announce.title": 'Nasce a <span class="accent">Nera Security</span>.',
-      "announce.lead": "Com foco na segurança do ecossistema de IA e em uma abordagem proativa — validar, testar e antecipar — na defesa dos ambientes.",
-      "announce.credentials": "Por trás da Nera estão profissionais com certificações CISSP, OSCP e GIAC, entre outras, e mais de 50 anos somados de experiência em algumas das principais operações de cibersegurança da América Latina e dos Estados Unidos.",
+      "announce.lead": "Uma empresa focada na segurança proativa do ecossistema de IA, com uma abordagem contínua de proteção dos ambientes digitais.",
+      "announce.cycle": "Atuamos em um ciclo permanente — antecipar, validar, testar e agir — da avaliação de risco à resposta a incidentes, em infraestrutura digital e sistemas de IA.",
+      "announce.pillar1Title": "Antecipar",
+      "announce.pillar1Body": "Identificamos as ameaças antes que cheguem ao ambiente, combinando inteligência, threat hunting e deception.",
+      "announce.pillar2Title": "Validar",
+      "announce.pillar2Body": "Expomos o risco real do ambiente — gaps, arquitetura, cenários de comprometimento — antes de qualquer ação corretiva.",
+      "announce.pillar3Title": "Testar",
+      "announce.pillar3Body": "Colocamos as defesas à prova, com segurança ofensiva e simulações de ataque baseadas em cenários reais.",
+      "announce.pillar4Title": "Agir",
+      "announce.pillar4Body": "Mitigamos as ameaças identificadas e atuamos quando o incidente acontece: contenção, resposta forense e negociação — conduzidas por quem já conhece o ambiente.",
+      "announce.credentials": "Por trás da Nera estão profissionais com certificações CISSP, OSCP e GIAC, entre outras, e mais de 50 anos somados de experiência em algumas das principais operações de cibersegurança no Brasil, na América Latina e nos Estados Unidos.",
       "announce.contact": "info@nerasec.ai",
       "announce.soon": "Em breve, mais informações.",
       "footer.copy": "© 2026 Nera Security. Todos os direitos reservados.",
@@ -291,8 +364,17 @@
     en: {
       "announce.eyebrow": "Security, proven. Not a snapshot.",
       "announce.title": 'Nera <span class="accent">Security</span> is born.',
-      "announce.lead": "Focused on securing the AI ecosystem through a proactive approach — validate, test, anticipate — in defense of your environment.",
-      "announce.credentials": "Behind Nera are professionals holding CISSP, OSCP, and GIAC certifications, among others, with more than 50 combined years of experience across some of the leading cybersecurity operations in Latin America and the United States.",
+      "announce.lead": "A company focused on proactive security for the AI ecosystem, with a continuous approach to protecting digital environments.",
+      "announce.cycle": "We operate in a permanent cycle — anticipate, validate, test, and act — from risk assessment to incident response, across digital infrastructure and AI systems.",
+      "announce.pillar1Title": "Anticipate",
+      "announce.pillar1Body": "We identify threats before they reach the environment, combining intelligence, threat hunting, and deception.",
+      "announce.pillar2Title": "Validate",
+      "announce.pillar2Body": "We expose the environment's real risk — gaps, architecture, compromise scenarios — before any corrective action.",
+      "announce.pillar3Title": "Test",
+      "announce.pillar3Body": "We put defenses to the test, with offensive security and attack simulations based on real-world scenarios.",
+      "announce.pillar4Title": "Act",
+      "announce.pillar4Body": "We mitigate identified threats and respond when an incident happens: containment, forensic response, and negotiation — led by people who already know the environment.",
+      "announce.credentials": "Behind Nera are professionals holding CISSP, OSCP, and GIAC certifications, among others, with more than 50 combined years of experience across some of the leading cybersecurity operations in Brazil, Latin America, and the United States.",
       "announce.contact": "info@nerasec.ai",
       "announce.soon": "More information coming soon.",
       "footer.copy": "© 2026 Nera Security. All rights reserved.",
@@ -301,8 +383,17 @@
     es: {
       "announce.eyebrow": "Seguridad probada, no fotografiada",
       "announce.title": 'Nace <span class="accent">Nera Security</span>.',
-      "announce.lead": "Con foco en la seguridad del ecosistema de IA y un enfoque proactivo — validar, probar y anticipar — en la defensa de los entornos.",
-      "announce.credentials": "Detrás de Nera hay profesionales con certificaciones CISSP, OSCP y GIAC, entre otras, y más de 50 años combinados de experiencia en algunas de las principales operaciones de ciberseguridad de América Latina y Estados Unidos.",
+      "announce.lead": "Una empresa enfocada en la seguridad proactiva del ecosistema de IA, con un enfoque continuo de protección de los entornos digitales.",
+      "announce.cycle": "Operamos en un ciclo permanente — anticipar, validar, probar y actuar — desde la evaluación de riesgos hasta la respuesta a incidentes, en infraestructura digital y sistemas de IA.",
+      "announce.pillar1Title": "Anticipar",
+      "announce.pillar1Body": "Identificamos las amenazas antes de que lleguen al entorno, combinando inteligencia, threat hunting y deception.",
+      "announce.pillar2Title": "Validar",
+      "announce.pillar2Body": "Exponemos el riesgo real del entorno — brechas, arquitectura, escenarios de compromiso — antes de cualquier acción correctiva.",
+      "announce.pillar3Title": "Probar",
+      "announce.pillar3Body": "Ponemos a prueba las defensas, con seguridad ofensiva y simulaciones de ataque basadas en escenarios reales.",
+      "announce.pillar4Title": "Actuar",
+      "announce.pillar4Body": "Mitigamos las amenazas identificadas y actuamos cuando ocurre el incidente: contención, respuesta forense y negociación — lideradas por quienes ya conocen el entorno.",
+      "announce.credentials": "Detrás de Nera hay profesionales con certificaciones CISSP, OSCP y GIAC, entre otras, y más de 50 años combinados de experiencia en algunas de las principales operaciones de ciberseguridad en Brasil, América Latina y Estados Unidos.",
       "announce.contact": "info@nerasec.ai",
       "announce.soon": "Próximamente, más información.",
       "footer.copy": "© 2026 Nera Security. Todos los derechos reservados.",
